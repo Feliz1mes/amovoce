@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login pro meu coração</title>
+</head>
+<body>
+    
+    <form>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Apenas o amor da minha vida<br>será aceito</h1>        
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>LOGIN</h1>                                       
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="usuario" placeholder="Usuário">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha">
+                </div>
+                <input class="btn-login" type="submit" onclick="logar(); return false">
+
+                                
+                       
+            </div>
+        </div>             
+    </div>
+     </form>
+
+     <script>
+
+        function logar(){
+
+            var usuario = document.getElementById('usuario').value;
+            var senha = document.getElementById('senha').value;
+
+            if(usuario == "isabela" && senha == "teamo"){
+                location.href = "amovoce.html";
+            }
+
+            else{
+                alert('VAZA VAGABUNDA');
+            }
+
+
+        }
+
+        
+    </script>
+</body>
+</html>
